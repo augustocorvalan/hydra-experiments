@@ -1,7 +1,6 @@
-const initHydra = require('./hydra-setup');
+const initHydra = require('./hydraInit');
 
 initHydra();
-
 
 // once hydra instance is created
 // you can then copy / paste exisiting hydra sketch
