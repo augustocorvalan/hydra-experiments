@@ -2,15 +2,18 @@
   "name": "hydra-experiments",
   "version": "1.0.0",
   "description": "Iterations, accelerations, mistakes, etc.",
-  "main": "app.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify js/app.js -o js/bundle.js",
+    "watch": "watchify js/app.js -o js/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "hydra-synth": "^1.0.27"
   },
   "devDependencies": {
-    "browserify": "^16.5.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browserify": "^16.5.0",
+    "watchify": "^3.11.1"
   },
   "repository": {
     "type": "git",
