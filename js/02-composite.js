@@ -1,10 +1,3 @@
-const initHydra = require('./hydraInit');
-
-initHydra();
-
-// once hydra instance is created
-// you can then copy / paste exisiting hydra sketch
-
 triangle = () => shape(3,   () => {
     if (mouse.x > 500) return 0.5
     return 0.05
@@ -30,5 +23,3 @@ src(o1)
 .out(o0);
 
 render(o0);
-
-console.log(sketch);
