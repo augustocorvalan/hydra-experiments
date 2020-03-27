@@ -1,11 +1,3 @@
-const initHydra = require('./hydraInit');
-
-initHydra();
-
-// once hydra instance is created
-// you can then copy / paste exisiting hydra sketch
-
-
 const vid = document.createElement('video');
 vid.autoplay = true;
 vid.loop = true;
@@ -36,5 +28,3 @@ src(o4)
 .out(o0);
 
 //render()
-
-console.log(sketch);

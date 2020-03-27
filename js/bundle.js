@@ -6,31 +6,37 @@ initHydra();
 // once hydra instance is created
 // you can then copy / paste exisiting hydra sketch
 
-triangle = () => shape(3,   () => {
-    if (mouse.x > 500) return 0.5
-    return 0.05
-  })
-.scrollX(0, [0.006, -0.006].fast(0.05))
+
+const vid = document.createElement('video');
+vid.autoplay = true;
+vid.loop = true;
+vid.src = "/img/eye-1.mp4";
+
+
+osc([3,4,5,8,10], 0.1, 1)
+.kaleid([40,20])
+.rotate(1, 1)
 .out(o1)
 
-oscill = () => osc([75,80,60].fast(0.25), 0)
-.thresh()
-.colorama(100)
-.out(o2)
 
-triangle()
-oscill()
+s0.init(
+  {
+    src: vid,
+    dynamic: true
+  }
+);
 
-src(o1)
-//.add(o1)
-.mult(o1)
-//.diff(o1)
-//.mask(o1)
-//.blend(o1)
-.modulate(o2)
+src(s0)
+.scrollX(0, 0.05)
+.repeat([2,4])
+.color([0,2,0.5],[1,2],[1,0,0.5])
+.out(o4)
+
+src(o4)
+.modulate(o1)
 .out(o0);
 
-render(o0);
+//render()
 
 console.log(sketch);
 
@@ -63,9 +69,9 @@ module.exports = initHydra = () => {
     // it makes it easier to copy and paste existing
     // hydra code
 
-    numSources: 4,
+    numSources: 5,
 
-    numOutputs: 4,
+    numOutputs: 5,
 
     detectAudio: false,
     // prevents microphone prompt

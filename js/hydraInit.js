@@ -26,9 +26,9 @@ module.exports = initHydra = () => {
     // it makes it easier to copy and paste existing
     // hydra code
 
-    numSources: 4,
+    numSources: 5,
 
-    numOutputs: 4,
+    numOutputs: 5,
 
     detectAudio: false,
     // prevents microphone prompt
