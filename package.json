@@ -1,0 +1,25 @@
+{
+  "name": "hydra-experiments",
+  "version": "1.0.0",
+  "description": "Iterations, accelerations, mistakes, etc.",
+  "main": "app.js",
+  "dependencies": {
+    "hydra-synth": "^1.0.27"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustocorvalan/hydra-experiments.git"
+  },
+  "author": "Augusto Corvalann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/augustocorvalan/hydra-experiments/issues"
+  },
+  "homepage": "https://github.com/augustocorvalan/hydra-experiments#readme"
+}
